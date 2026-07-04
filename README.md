@@ -1,14 +1,14 @@
-# Brario — 2D Platformer Template
+# Platform Quest — 2D Platformer Template
 
-A complete, playable Mario-style 2D platformer built with **[Summer Engine](https://github.com/SummerEngine)** (Godot 4.6 / Mono). Use it as a starting point for your own Summer Engine project — it's a full vertical slice you can rip apart, reskin, or extend.
+A complete, playable side-scrolling 2D platformer built with **[Summer Engine](https://github.com/SummerEngine)** (Godot 4.6 / Mono). Use it as a starting point for your own Summer Engine project — it's a full vertical slice you can rip apart, reskin, or extend.
 
-Everything here is hand-rollable: sprites are drawn procedurally by small PowerShell scripts in `tools/`, and the music/SFX were generated through Summer Studio. No paid or copyrighted assets.
+Everything here is hand-rollable: sprites are drawn procedurally by small PowerShell scripts in `tools/`, and the music/SFX were generated through Summer Studio. No paid or third-party assets.
 
 ## What's inside
 
 - **Main menu** with splash art, plus themed **Game Over** and **You Win!** screens.
 - **4 levels** of increasing complexity, then a **boss room**.
-- A **boss** — "King Goomba", a big stompable enemy that paces the arena, telegraphs charge-dashes, enrages as it loses health, and takes 3 stomps to beat.
+- A **boss** — the "Critter King", a big stompable enemy that paces the arena, telegraphs charge-dashes, enrages as it loses health, and takes 3 stomps to beat.
 - **Grid / tile-based levels** authored as plain-text ASCII maps (see below) — dead simple to edit or generate.
 - **Dynamic platforms & hazards**: moving platforms, slopes, bounce pads, crumbling blocks, spikes, sawblades.
 - **Pickups**: animated coins (with a HUD counter) and hearts that restore health.
@@ -35,7 +35,7 @@ Tile legend:
 | `.` | empty (sky) | `o` | bounce pad |
 | `#` | solid block / ground | `x` | crumbling block |
 | `P` | player spawn | `^` | spike |
-| `G` | goomba | `s` | sawblade |
+| `G` | critter (walking enemy) | `s` | sawblade |
 | `D` | exit door | `B` | boss |
 | `-` | horizontal moving platform | `c` | coin |
 | `\|` | vertical moving platform | `h` | heart |
@@ -53,7 +53,6 @@ scripts/             # GDScript: player controller, enemies, level loader, GameM
 assets/sprites/      # procedurally generated PNGs
 assets/audio/        # generated music + SFX
 tools/               # PowerShell scripts that draw the sprites & splash art
-docs/                # design specs
 ```
 
 `GameManager` (autoload) owns lives, coins, level progression, and music; `Sfx` (autoload) is a pooled one-shot sound player.

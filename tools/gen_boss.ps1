@@ -1,6 +1,6 @@
-# Paints the Goomba-King boss frames (walk x2, charge, hurt) as 96x96 PNGs with
+# Paints the Critter King boss frames (walk x2, charge, hurt) as 96x96 PNGs with
 # real alpha. Feet sit at the canvas bottom so the enemy feet-at-origin convention
-# (see goomba.gd) places him on the ground. Pure System.Drawing / GDI+.
+# (see critter.gd) places him on the ground. Pure System.Drawing / GDI+.
 param([Parameter(Mandatory = $true)][string]$Dir)
 
 $cs = @'

@@ -9,6 +9,9 @@ Thumbs.db
 .claude/
 .specstory/
 
+# Internal design docs — kept local, not shipped in the template
+docs/
+
 # Summer Engine local-only state (SummerGit, caches, locks)
 .summer/local/
 

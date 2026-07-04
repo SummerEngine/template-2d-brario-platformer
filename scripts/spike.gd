@@ -1,5 +1,5 @@
 extends Area2D
-# Hazard tile: damages the player on contact, mirroring the Goomba hitbox.
+# Hazard tile: damages the player on contact, the same way enemies do.
 # Non-solid (Area2D), so it sits in a cell and hurts whoever overlaps it.
 
 func _ready() -> void:

@@ -5,8 +5,8 @@ const GRAVITY := 1100.0
 const DISPLAY_H := 34.0       # on-screen height
 const WALK_FPS := 6.0         # waddle cadence
 
-# Can the player kill a goomba by jumping on its head? Flip to false to make
-# goombas un-stompable (landing on one then just hurts the player, like a side hit).
+# Can the player kill a critter by jumping on its head? Flip to false to make
+# critters un-stompable (landing on one then just hurts the player, like a side hit).
 const STOMPABLE := true
 const STOMP_BOUNCE := -480.0  # the player's pop after a successful stomp
 
@@ -27,8 +27,8 @@ func _ready() -> void:
 	floor_snap_length = 20.0
 	floor_max_angle = deg_to_rad(50.0)
 	walk_frames = [
-		_load_tex("res://assets/sprites/goomba_walk1.png"),
-		_load_tex("res://assets/sprites/goomba_walk2.png"),
+		_load_tex("res://assets/sprites/critter_walk1.png"),
+		_load_tex("res://assets/sprites/critter_walk2.png"),
 	]
 	sprite.centered = true
 	sprite.texture = walk_frames[0]

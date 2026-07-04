@@ -1,5 +1,5 @@
 extends Node2D
-# Parses the current ASCII level into instanced Block / Player / Goomba / Door
+# Parses the current ASCII level into instanced Block / Player / Critter / Door
 # scenes, then configures the camera.
 
 const TILE := 32
@@ -40,7 +40,7 @@ func _build(text: String) -> void:
 				"P":
 					player = _spawn("res://scenes/Player.tscn", pos)
 				"G":
-					_spawn("res://scenes/Goomba.tscn", pos)
+					_spawn("res://scenes/Critter.tscn", pos)
 				"D":
 					_spawn("res://scenes/Door.tscn", pos)
 				"-":

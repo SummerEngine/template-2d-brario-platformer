@@ -1,5 +1,5 @@
 extends CharacterBody2D
-# Goomba-King boss. Invulnerable except to head-stomps (jump on his crown while
+# Critter King boss. Invulnerable except to head-stomps (jump on his head while
 # falling). He paces the arena and periodically telegraphs a charge-dash. Three
 # stomps defeat him; he enrages (faster, more frequent charges) with each hit.
 # Beating him advances the game, which (being the last room) shows the Win screen.

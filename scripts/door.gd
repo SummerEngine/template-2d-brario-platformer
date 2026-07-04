@@ -10,7 +10,7 @@ func _ready() -> void:
 	body_entered.connect(_on_body_entered)
 	_snap_to_ground()
 
-# The door is a static Area2D (it doesn't fall like the player/goomba), so rest
+# The door is a static Area2D (it doesn't fall like the player/enemies), so rest
 # its base on the first solid surface directly below its spawn cell.
 func _snap_to_ground() -> void:
 	await get_tree().physics_frame  # wait until the level's blocks exist in the physics space

@@ -59,4 +59,4 @@ tools/               # PowerShell scripts that draw the sprites & splash art
 
 ## Using it in Summer Engine
 
-Create a new project from this template in Summer Engine, or clone the repo and open the folder — it's a standard Godot 4.6 (Mono) project. On first open, Godot re-imports the assets (the `.godot/` cache and `*.import` files are intentionally gitignored), then just press play.
+Create a new project from this template in Summer Engine, or clone the repo and open the folder — it's a standard Godot 4.6 (Mono) project. On first open, Godot imports the assets into the (gitignored) `.godot/` cache and writes `*.import` files next to them; commit those `.import` files so every clone imports identically, then just press play.
